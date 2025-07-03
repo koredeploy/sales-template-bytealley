@@ -97,11 +97,16 @@ button:hover {
   background-color: var(--faded-blue);
 }
 
+/* .nav-bar {
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
 nav {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
   align-items: center;
   position: relative;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
@@ -589,6 +594,12 @@ footer {
 }
 
 @media (width > 820px) {
+  /* .nav-bar {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0rem;
+    padding: 0rem;
+  } */
   h1 {
     font-size: 3rem;
     font-weight: bold;

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/payment.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+        <nav class="spt-res-w-one">
+          <h2>LOGO</h2>
+    
+          <ul>
+            <li><a href="#">Nav Item</a></li>
+            <li><a href="#">Nav Item</a></li>
+            <li><a href="#">Nav Item</a></li>
+            <button class="show-mobile">Get Course</button>
+          </ul>
+    
+          <div class="menu">
+            <button>Get Course</button>
+            <span class="hamburger" aria-label="Toggle menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+        </nav>
+    </div>
+
+    <section>
+      <div class="sptp-details spt-res-w-one">
+        <div class="sptp-details-left">
+          <div class="spp-c-d">
+            <h2>10X Revenue Course</h2>
+            <h2 class="amount">₦50,000</h2>
+          </div>
+          <p class="course-description">
+            Unlock proven strategies to 10X your revenue in 30 days with our
+            comprehensive step-by-step course!
+          </p>
+
+          <div class="bonus-card">
+            <h2>🎁 Bonuses Included</h2>
+            <ul>
+              <li class="bonus-list">Free eBook: "Revenue Optimization Secrets"</li>
+              <li class="bonus-list">Access to Exclusive Live Webinar ($97 value)</li>
+              <li class="bonus-list">30-Day Money-Back Guarantee</li>
+            </ul>
+          </div>
+        </div>
+        <!-- payment form -->
+      <div class="form-container">
+        <h2 class="form-title">Billing Information</h2>
+        
+        <form id="billingForm">
+            <div class="form-group">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    class="form-input" 
+                    placeholder="Enter full name" 
+                    required
+                >
+                <div class="form-validation" id="fullNameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="Enter email address" 
+                    required
+                >
+                <div class="form-validation" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number (optional)</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    class="form-input" 
+                    placeholder="Enter phone number"
+                >
+                <div class="form-validation" id="phoneError"></div>
+            </div>
+
+            <div class="payment-section">
+                <h3 class="payment-title">Payment Method</h3>
+                <div class="payment-options">
+                    <div class="payment-option selected" data-method="paystack">
+                        <input 
+                            type="radio" 
+                            id="paystack" 
+                            name="paymentMethod" 
+                            value="paystack" 
+                            class="payment-radio" 
+                            checked
+                        >
+                         <label for="paystack" class="payment-label">
+                           Paystack
+                        </label>
+                    </div>
+                    
+                    <div class="payment-option" data-method="bank-transfer">
+                        <input 
+                            type="radio" 
+                            id="bankTransfer" 
+                            name="paymentMethod" 
+                            value="bank-transfer" 
+                            class="payment-radio"
+                        >
+                        <label for="bankTransfer" class="payment-label">
+                            Direct Bank Transfer
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="pay-button" id="payButton">
+                PAY NOW
+            </button>
+            </button>
+        </form>
+    </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container spt-res-w">
+        <h2 class="spt-logo">LOGO</h2>
+
+        <div class="footer-frag-two">
+          <ul class="links">
+            <li><a href="#">Nav Item</a></li>
+            <li><a href="#">Nav Item</a></li>
+            <li><a href="#">Nav Item</a></li>
+          </ul>
+        </div>
+        <div class="footer-frag-three">
+          <ul class="links">
+            <li><a href="#">Nav Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
